@@ -7,7 +7,8 @@ $.ajax({
   success: function(data) {
     console.log(data);
     $("#photo").attr('src',data.results[0]['picture']['large']);
-    $('#name').html(data.results[0]['name']['first'] + " " + data.results[0]['name']['last'])
+    $('#name').html(data.results[0]['name']['first'] + " " + data.results[0]['name']['last']);
+    $('#phone').html(data.results[0]['cell']);
   }
 });
 </script>
@@ -15,3 +16,4 @@ $.ajax({
 
 <img src="" id="photo"/>
 <h2 id="name"></h2>
+<p id="phone"></p>
