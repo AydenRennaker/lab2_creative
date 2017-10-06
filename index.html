@@ -6,6 +6,10 @@ $.ajax({
   dataType: 'json',
   success: function(data) {
     console.log(data);
+    $("#photo").attr('src',data.results[0]['picture']['large']);
   }
 });
 </script>
+
+
+<img src="" id="photo"/>
