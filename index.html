@@ -7,9 +7,11 @@ $.ajax({
   success: function(data) {
     console.log(data);
     $("#photo").attr('src',data.results[0]['picture']['large']);
+    $('#name').val(data.results[0]['name']['first'] + " " + data.results[0]['name']['last'])
   }
 });
 </script>
 
 
 <img src="" id="photo"/>
+<h2 id="name"></h2>
