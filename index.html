@@ -16,12 +16,10 @@ $.ajax({
       gender = "f";
     }
 
-    $("#belike").attr('src',"http://belikebill.azurewebsites.net/billgen-API.php?name=" + data.results[0]['name']['first'] +"&sex=" + gender + "&default=1");
+    $("#belike").attr('src', "http://belikebill.azurewebsites.net/billgen-API.php?name=" + data.results[0]['name']['first'] +"&sex=" + gender + "&default=1");
   }
 });
 
-
-http://belikebill.azurewebsites.net/billgen-API.php?name=ben&sex=m&default=1
 </script>
 
 <p>This site pulls random information from an API to display some profile info about a person.</p>
